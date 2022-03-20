@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;700;900&display=swap');
+.second-img{
+  display: none;
+}
 .intro {
     width: 100%;
     padding: 75px 280px;
@@ -647,6 +650,9 @@
     }
 }
 @media screen and (max-width: 870px) {
+	.second-img{
+	  display: block;
+	}
        .info-sell-pictures-inner{
 	  display: none;
 	}
