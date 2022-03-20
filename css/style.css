@@ -152,6 +152,7 @@
     flex-direction: column;
     margin-left: 24px;
     height: 100%;
+    max-height: 407px;
     overflow-y: auto;
     padding-right: 5px;
 }
@@ -451,6 +452,7 @@
 .info-sell-pictures-inner > .info-sell-pictures-img{
   width: 150px;
   height: 150px;
+  min-height: 150px;
   cursor: pointer;
 }
 .slider__btn-list {
@@ -507,9 +509,13 @@
   .info-sell{
     height: auto;
   }
+  .info-sell-pictures-inner{
+    max-height: 164px;
+  }
   .info-sell-pictures-inner > .info-sell-pictures-img{
     width: 75px;
     height: 75px;
+    min-height: 75px;
   }
 }
 @media screen and (max-width: 950px){
