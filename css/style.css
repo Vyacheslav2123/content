@@ -647,6 +647,18 @@
     }
 }
 @media screen and (max-width: 870px) {
+       .info-sell-pictures-inner{
+	  display: none;
+	}
+       .info-sell-pictures{
+	  flex-direction: row;
+	  justify-content: flex-start;
+	  overflow-x: auto;
+	  width: 100%;
+	}
+     .info-sell-pictures-img{
+	  min-width: 229px;
+	}
     .info-sell-pictures-inner{
 	 justify-content: center;
 	}
