@@ -151,6 +151,17 @@
     display: flex;
     flex-direction: column;
     margin-left: 24px;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+.info-sell-pictures-inner::-webkit-scrollbar-thumb{
+  width: 5px;
+  border-radius: 5px;
+  background-color: #aaa;
+}
+.info-sell-pictures-inner::-webkit-scrollbar{
+  width: 5px;
 }
 .info-sell-pictures-img {
     width: 330px;
@@ -663,6 +674,8 @@
 	  flex-direction: row;
 	  justify-content: flex-start;
 	  overflow-x: auto;
+	  overflow-y: hidden;
+	  height: auto;
 	  width: 100%;
 	}
      .info-sell-pictures-img{
@@ -673,6 +686,8 @@
 	}
     .info-sell-pictures-inner{
 	 justify-content: flex-start;
+	 width: 100%;
+	 overflow-x: auto;
 	}
      .info-sell-pictures{
 	 align-items: center;
