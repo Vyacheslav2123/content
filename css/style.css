@@ -715,6 +715,12 @@
     }
 }
 @media screen and (max-width: 560px) {
+    .info-sell-extra-terms-hr{
+	  display: none;
+    }
+    .info-sell-extra-terms{
+	  border-left: 5px solid #93C93E;
+    }
     .intro {
 	display:flex;
 	justify-content:center;
