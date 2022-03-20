@@ -57,7 +57,7 @@ function changePicture(e){
 	  parent = parent[0] instanceof Text ? parent[1] : parent[1];
 	  let scrollTo = Array.prototype.slice.call(parent.childNodes).filter(e => !(e instanceof Text))[index];
 	  parent.scroll({
-	      left: scrollTo.offsetLeft,
+	      left: scrollTo.offsetLeft - parent.offsetLeft,
 	      behavior: "smooth"
 	  });
 	  return;
