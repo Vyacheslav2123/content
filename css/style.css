@@ -761,6 +761,9 @@
         display:flex;
         justify-content: center;
     }
+    .info-sell-extra-terms-rent-container-inner {
+	 margin-right:10px;   
+    }
 }
 @media screen and (max-width: 635px) {
 	.organization {
