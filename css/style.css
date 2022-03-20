@@ -641,13 +641,13 @@
      }
 }
 @media screen and (max-width: 900px) {
-.info-sell-pictures-inner{
-	 justify-content: flex-start;
-	 width: 100%;
-	 height: auto;
-	 overflow-x: auto;
-	 overflow-y: hidden;
-}
+	.info-sell-pictures-inner{
+          justify-content: flex-start;
+	  height: auto;
+	  width: 229px;
+	  overflow-x: auto;
+	  overflow-y: hidden;
+	}
     .info-sell-pictures-container{
       flex-direction: column;	
     }
@@ -676,6 +676,9 @@
     }
 }
 @media screen and (max-width: 870px) {
+	.info-sell-pictures-inner{
+	   width: 100%;
+         }
 	.info-sell-pictures-inner::-webkit-scrollbar-thumb{
  	  width: 5px;
 	  height: 5px;
