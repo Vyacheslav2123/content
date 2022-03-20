@@ -744,7 +744,8 @@
         margin:0 0 13px;
     }
     .info-sell-extra-btn-rent, .info-sell-extra-btn-buy {
-        width: 279px;
+        max-width: 279px;
+        width:95%;
     }
     .info-sell-extra-terms-sale {
         margin-top:19px;
