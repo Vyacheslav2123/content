@@ -50,7 +50,18 @@ for (let el of document.querySelectorAll(".info-sell-pictures-inner > .info-sell
     el.addEventListener('click', (e) => changePicture(e));
 }
 function changePicture(e){
-	let target = e.target;
+	let target = e.target
+	if(window.matchMedia("screen and (max-width: 870px)").matches){
+	  let index = Array.prototype.slice.call(target.parentElement.childNodes).filter(e => !(e instanceof Text)).indexOf(target);
+	  let parent = target.parentElement.parentElement.childNodes;
+	  parent = parent[0] instanceof Text ? parent[1] : parent[1];
+	  let scrollTo = Array.prototype.slice.call(parent.childNodes).filter(e => !(e instanceof Text))[index];
+	  parent.scroll({
+	      left: scrollTo.offsetLeft,
+	      behavior: "smooth"
+	  });
+	  return;
+	}
 	let childNodes = target.parentNode.parentNode.childNodes;
 	let toReplace = (childNodes[0] instanceof Text ? childNodes[1] : childNodes[0]).childNodes;
 	toReplace = toReplace[0] instanceof Text ? toReplace[1] : toReplace[0];
