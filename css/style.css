@@ -763,6 +763,9 @@
     .info-sell-extra-terms-rent-container-inner {
 	 margin-right:10px !important;   
     }
+    .info-sell-desc-text {
+	font-size:13px;    
+    }
 }
 @media screen and (max-width: 635px) {
 	.organization {
