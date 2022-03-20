@@ -147,6 +147,9 @@
 .info-sell-pictures {
     display: flex;
 }
+.info-sell-pictures > div:last-child{
+  margin-right: 0;
+}
 .info-sell-pictures-inner {
     display: flex;
     flex-direction: column;
