@@ -163,15 +163,6 @@
 .info-sell-pictures-inner > div:last-child{
   margin: 0;
 }
-.info-sell-pictures-inner::-webkit-scrollbar-thumb{
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #aaa;
-}
-.info-sell-pictures-inner::-webkit-scrollbar{
-  width: 5px;
-}
 .info-sell-pictures-img {
     width: 330px;
     height: 407px;
@@ -650,6 +641,13 @@
      }
 }
 @media screen and (max-width: 900px) {
+.info-sell-pictures-inner{
+	 justify-content: flex-start;
+	 width: 100%;
+	 height: auto;
+	 overflow-x: auto;
+	 overflow-y: hidden;
+}
     .info-sell-pictures-container{
       flex-direction: column;	
     }
@@ -678,6 +676,15 @@
     }
 }
 @media screen and (max-width: 870px) {
+	.info-sell-pictures-inner::-webkit-scrollbar-thumb{
+ 	  width: 5px;
+	  height: 5px;
+ 	  border-radius: 5px;
+	  background-color: #aaa;
+	}
+	.info-sell-pictures-inner::-webkit-scrollbar{
+  	  width: 5px;
+        }
 	.second-img{
 	  display: block;
 	}
@@ -695,13 +702,6 @@
 	}
     .second-img {
 	    background-image: url('https://media.nashaspravka.ru/attachments/ncg/publications/0/20/20404/thumb_1448819501-5960880773.jpg') !important;
-	}
-    .info-sell-pictures-inner{
-	 justify-content: flex-start;
-	 width: 100%;
-	 height: auto;
-	 overflow-x: auto;
-	 overflow-y: hidden;
 	}
      .info-sell-pictures{
 	 align-items: center;
