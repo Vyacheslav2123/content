@@ -53,8 +53,7 @@ function changePicture(e){
 	let target = e.target;
 	let childNodes = target.parentNode.parentNode.childNodes;
 	let toReplace = (childNodes[0] instanceof Text ? childNodes[1] : childNodes[0]).childNodes;
-	toReplace = toReplace[0] instanceof Text ? childNodes[1] : childNodes[0];
-	toReplace = toReplace[0] instanceof Text ? childNodes[1] : childNodes[0];
+	toReplace = toReplace[0] instanceof Text ? toReplace[1] : toReplace[0];
 	toReplace.style.backgroundImage = target.style.backgroundImage;
 }
 sliderWrap.addEventListener("touchstart", e => {
