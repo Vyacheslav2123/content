@@ -674,8 +674,6 @@
 	  flex-direction: row;
 	  justify-content: flex-start;
 	  overflow-x: auto;
-	  overflow-y: hidden;
-	  height: auto;
 	  width: 100%;
 	}
      .info-sell-pictures-img{
@@ -687,7 +685,9 @@
     .info-sell-pictures-inner{
 	 justify-content: flex-start;
 	 width: 100%;
+	 height: auto;
 	 overflow-x: auto;
+	 overflow-y: hidden;
 	}
      .info-sell-pictures{
 	 align-items: center;
