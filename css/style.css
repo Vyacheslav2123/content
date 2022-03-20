@@ -764,7 +764,8 @@
 	 margin-right:10px !important;   
     }
     .info-sell-desc-text {
-	font-size:13px;    
+	font-size:13px;
+	width:95%;
     }
 }
 @media screen and (max-width: 635px) {
