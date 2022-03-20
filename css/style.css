@@ -142,7 +142,7 @@
 }
 .info-sell-pictures-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .info-sell-pictures {
     display: flex;
