@@ -685,7 +685,6 @@
     .info-sell-extra-text {
         font-size: 15px !important;
         line-height:18px !important;
-        height:auto !important;
     }
     .info-sell-extra-terms-rent-price {
         margin-bottom:0 !important;
@@ -762,7 +761,7 @@
         justify-content: center;
     }
     .info-sell-extra-terms-rent-container-inner {
-	 margin-right:10px;   
+	 margin-right:10px !important;   
     }
 }
 @media screen and (max-width: 635px) {
