@@ -443,6 +443,7 @@
     list-style-type: none;
     display:flex;
     display:none;
+    justify-content: center;	
     padding-left:0;
 }
 .slider__pag-btn {
@@ -450,8 +451,7 @@
     height:13px;
     background: #CFCFCF;
     border-radius:50%;
-    margin-top:20px;
-    margin-right:11px;
+    margin: 20px 6px 0px;
 }
 .slider__pag-btn-active {
     background: #B22025;
