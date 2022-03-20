@@ -710,6 +710,10 @@
     }
 }
 @media screen and (max-width: 560px) {
+    .intro {
+	display:flex;
+	justify-content:center;
+    }
     .info-sell {
         height:auto;
         padding:16px 16px 43px 16px;
@@ -750,8 +754,12 @@
         font-size:22px;
     }
     .info-sell-extra-terms-hr {
-        height:80px !important;
+        height:95px !important;
         margin:0;
+    }
+    .info-accessories {
+        display:flex;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 635px) {
