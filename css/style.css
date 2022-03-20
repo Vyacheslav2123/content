@@ -625,6 +625,9 @@
      }
 }
 @media screen and (max-width: 900px) {
+    .info-sell-pictures-container{
+      flex-direction: column;	
+    }
     .info-sell {
         width:100%;
     }
@@ -653,8 +656,8 @@
 	.second-img{
 	  display: block;
 	}
-       .info-sell-pictures-inner{
-	  display: none;
+	.info-sell-pictures-inner > .info-sell-pictures-img{
+	  min-width: 75px !important;
 	}
        .info-sell-pictures{
 	  flex-direction: row;
@@ -669,7 +672,7 @@
 	    background-image: url('https://media.nashaspravka.ru/attachments/ncg/publications/0/20/20404/thumb_1448819501-5960880773.jpg') !important;
 	}
     .info-sell-pictures-inner{
-	 justify-content: center;
+	 justify-content: flex-start;
 	}
      .info-sell-pictures{
 	 align-items: center;
