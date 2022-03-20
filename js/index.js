@@ -3,6 +3,8 @@ const slider = document.querySelector(".slaider__img");
 const slides = document.querySelectorAll(".slaider__img");
 const sliderBtn = document.querySelectorAll(".slider__pag-btn");
 let index = 0;
+let needToSwipe = 25;
+let x = {};
 let max = slides.length;
 
 window.onload = window.onresize = () => {
@@ -53,3 +55,30 @@ function changePicture(e){
 	let toReplace = childNodes[0] instanceof Text ? childNodes[1] : childNodes[0];
 	toReplace.style.backgroundImage = target.style.backgroundImage;
 }
+sliderWrap.addEventListener("touchstart", e => {
+	if (e.changedTouches && e.changedTouches[0]) {
+		let cur = e.changedTouches[0];
+		x[cur.identifier] = cur.pageX;
+	}
+})
+sliderWrap.addEventListener("touchend", e => {
+	if (e.changedTouches && e.changedTouches[0]) {
+		let cur = e.changedTouches[0];
+		if (cur.pageX <= (x[cur.identifier] - needToSwipe)) index++;
+		else if (cur.pageX >= (x[cur.identifier] + needToSwipe)) index--;
+		if (index > 0 && index < max) {
+			sliderWrap.scrollTo({
+		  	left: index * (slides[0].scrollWidth + 25),
+		 	behavior: 'smooth'
+		   	});
+		}	else if (index <= 0 || index >= max) {
+	  			index = 0;
+	  			sliderWrap.scrollTo({
+			  	left: index * (slides[0].scrollWidth + 25),
+			 	behavior: 'smooth'
+		   	});
+ 		}
+		if (x[cur.identifier] != undefined) delete x[cur.identifier];
+		setActive(sliderBtn[index], sliderBtn, "slider__pag-btn-active");
+	}
+})
